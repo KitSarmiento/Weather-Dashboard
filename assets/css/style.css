@@ -1,0 +1,50 @@
+body {
+  margin: 1%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Domine", serif;
+  background: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+.container {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+.city {
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+
+input {
+  height: 3vh;
+  width: 25vw;
+  font-size: 18px;
+  padding: 2%;
+}
+
+.searchBtn {
+  background-color: rgba(10, 12, 29, 0.89);
+  border-color: rgb(0, 0, 0);
+  color: white;
+  width: 26vw;
+  font-size: 18px;
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+}
+
+.currentData {
+  border: 2px solid black;
+  padding: 2%;
+  margin: 10px 5px 10px 5px;
+  display: flex;
+  gap: 5rem;
+  background-color: rgb(9, 9, 107);
+  color: antiquewhite;
+}

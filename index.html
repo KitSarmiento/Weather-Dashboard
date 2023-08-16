@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+      <section>
+        <div class="container-1">
+          <p class="city">Enter a City Name</p>
+          <input
+            class="cityName"
+            type="text"
+            placeholder="Search for location"
+          />
+          <button class="searchBtn">Search</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="weatherData">
+          <div class="currentForecast">
+            <div class="currentData">
+              <h2>City(08/15/2023)</h2>
+              <p class="titleDetails">Temperature: __C°</p>
+              <p class="titleDetails">Wind: __M/S</p>
+              <p class="titleDetails">Humidity: __%</p>
+            </div>
+          </div>
+          <div class="daysForecast">
+            <h2 class>5 days Forecast</h2>
+            <div class="cardsForecast">
+              <div class="cardsDetails">
+                <h2>City Day 1 (date)</h2>
+                <p class="titleDetails">Temperature: __C°</p>
+                <p class="titleDetails">Wind: __M/S</p>
+                <p class="titleDetails">Humidity: __%</p>
+              </div>
+
+              <div class="cardsDetails">
+                <h2>City Day 2 (date)</h2>
+                <p class="titleDetails">Temperature: __C°</p>
+                <p class="titleDetails">Wind: __M/S</p>
+                <p class="titleDetails">Humidity: __%</p>
+              </div>
+
+              <div class="cardsDetails">
+                <h2>City Day 3 (date)</h2>
+                <p class="titleDetails">Temperature: __C°</p>
+                <p class="titleDetails">Wind: __M/S</p>
+                <p class="titleDetails">Humidity: __%</p>
+              </div>
+
+              <div class="cardsDetails">
+                <h2>City Day 4 (date)</h2>
+                <p class="titleDetails">Temperature: __C°</p>
+                <p class="titleDetails">Wind: __M/S</p>
+                <p class="titleDetails">Humidity: __%</p>
+              </div>
+
+              <div class="cardsDetails">
+                <h2>City Day 5 (date)</h2>
+                <p class="titleDetails">Temperature: __C°</p>
+                <p class="titleDetails">Wind: __M/S</p>
+                <p class="titleDetails">Humidity: __%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
