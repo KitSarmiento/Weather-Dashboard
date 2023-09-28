@@ -25,11 +25,15 @@
             type="text"
             placeholder="Search for location"
           />
-          <button class="searchBtn">Search</button>
+          <button class="searchBtn" onclick="toggleWeatherDashboard()">
+            Search
+          </button>
+          <h2>Search History</h2>
+          <ul class="searchHistory"></ul>
         </div>
       </section>
 
-      <section>
+      <section id="weatherDashboard" style="display: none">
         <div class="weatherData">
           <div class="currentForecast">
             <div class="currentData">
