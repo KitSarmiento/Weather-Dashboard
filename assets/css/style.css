@@ -1,50 +1,146 @@
-body {
-  margin: 1%;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Domine", serif;
-  background: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
 }
+
+body {
+  background-color: #afc9d3;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Domine", serif;
+  font-size: 2rem;
+}
+
 .container {
   display: flex;
   gap: 50px;
   padding: 20px;
 }
-h1 {
-  text-align: center;
-}
 
 .city {
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: black;
 }
 
-input {
+.cityName {
   height: 3vh;
   width: 25vw;
-  font-size: 18px;
-  padding: 2%;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .searchBtn {
   background-color: rgba(10, 12, 29, 0.89);
-  border-color: rgb(0, 0, 0);
+  border: none;
   color: white;
-  width: 26vw;
-  font-size: 18px;
-  padding: 2%;
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0 20px 0;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.searchBtn:hover {
+  background-color: #0a0c1d;
+}
+
+.weatherData {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .currentData {
   border: 2px solid black;
-  padding: 2%;
-  margin: 10px 5px 10px 5px;
+  padding: 20px;
+  margin: 10px 0;
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(9, 9, 107);
   color: antiquewhite;
+  border-radius: 10px;
+}
+
+.currentData h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.titleDetails {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.daysForecast {
+  margin-top: 20px;
+}
+
+.daysForecast h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cardsForecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cardsDetails {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardsDetails h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.searchHistory {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.searchHistory li {
+  font-size: 1rem;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.currentData img,
+.cardsDetails img {
+  width: 115px;
+  height: 115px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .currentData,
+  .cardsDetails {
+    width: 100%;
+  }
 }
