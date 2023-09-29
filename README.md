@@ -20,7 +20,7 @@ To use the Weather Dashboard, click on the link provided to access the deployed 
 
 Screenshot of the Weather Dashboard:
 
-![image](https://github.com/KitSarmiento/Weather-Dashboard/assets/135483936/549cdfb3-8fd0-4a7e-a23f-6e16e270a15a)
+![Weather-Dashboard Screenshot Final](https://github.com/KitSarmiento/Weather-Dashboard/assets/135483936/4a3c121d-c22f-41f1-a37e-91d72bf7cd0f)
 
 ## Credit
 
