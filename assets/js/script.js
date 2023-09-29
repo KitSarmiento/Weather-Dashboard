@@ -18,9 +18,9 @@ searchBtn.addEventListener("click", function () {
 });
 
 // function to toggle the dashboard
-function toggleWeatherDashboard() {
+function toggleWeatherDashboard(show) {
   var weatherDashboard = document.getElementById("weatherDashboard");
-  if (weatherDashboard.style.display === "none") {
+  if (show) {
     weatherDashboard.style.display = "block";
   } else {
     weatherDashboard.style.display = "none";
