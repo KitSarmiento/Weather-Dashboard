@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
+      <!-- This will be the landing page of the application -->
       <h1>Weather Dashboard</h1>
     </header>
     <div class="container">
       <section>
+        <!-- container 1 is where the search and search history will be placed.-->
         <div class="container-1">
           <p class="city">Enter a City Name</p>
           <input
@@ -25,56 +28,63 @@
             type="text"
             placeholder="Search for location"
           />
-          <button class="searchBtn">Search</button>
+          <button class="searchBtn" onclick="toggleWeatherDashboard(show)">
+            Search
+          </button>
+          <h2 id="history">Search History</h2>
+          <ul class="searchHistory"></ul>
         </div>
       </section>
 
-      <section>
+      <!-- Current Weather Data-->
+      <section id="weatherDashboard" style="display: none">
         <div class="weatherData">
           <div class="currentForecast">
             <div class="currentData">
-              <h2>City(08/15/2023)</h2>
-              <p class="titleDetails">Temperature: __C°</p>
-              <p class="titleDetails">Wind: __M/S</p>
-              <p class="titleDetails">Humidity: __%</p>
+              <h2>Date</h2>
+              <p class="titleDetails">Temperature/p></p>
+              <p class="titleDetails">Wind/p></p>
+              <p class="titleDetails">Humidity</p>
             </div>
           </div>
+
+          <!-- 5 days Weather Forecast Data-->
           <div class="daysForecast">
             <h2 class>5 days Forecast</h2>
             <div class="cardsForecast">
               <div class="cardsDetails">
-                <h2>City Day 1 (date)</h2>
-                <p class="titleDetails">Temperature: __C°</p>
-                <p class="titleDetails">Wind: __M/S</p>
-                <p class="titleDetails">Humidity: __%</p>
+                <h2>Date</h2>
+                <p class="titleDetails">Temperature/p></p>
+                <p class="titleDetails">Wind/p></p>
+                <p class="titleDetails">Humidity</p>
               </div>
 
               <div class="cardsDetails">
-                <h2>City Day 2 (date)</h2>
-                <p class="titleDetails">Temperature: __C°</p>
-                <p class="titleDetails">Wind: __M/S</p>
-                <p class="titleDetails">Humidity: __%</p>
+                <h2>Date</h2>
+                <p class="titleDetails">Temperature/p></p>
+                <p class="titleDetails">Wind/p></p>
+                <p class="titleDetails">Humidity</p>
               </div>
 
               <div class="cardsDetails">
-                <h2>City Day 3 (date)</h2>
-                <p class="titleDetails">Temperature: __C°</p>
-                <p class="titleDetails">Wind: __M/S</p>
-                <p class="titleDetails">Humidity: __%</p>
+                <h2>Date</h2>
+                <p class="titleDetails">Temperature/p></p>
+                <p class="titleDetails">Wind/p></p>
+                <p class="titleDetails">Humidity</p>
               </div>
 
               <div class="cardsDetails">
-                <h2>City Day 4 (date)</h2>
-                <p class="titleDetails">Temperature: __C°</p>
-                <p class="titleDetails">Wind: __M/S</p>
-                <p class="titleDetails">Humidity: __%</p>
+                <h2>Date</h2>
+                <p class="titleDetails">Temperature/p></p>
+                <p class="titleDetails">Wind/p></p>
+                <p class="titleDetails">Humidity</p>
               </div>
 
               <div class="cardsDetails">
-                <h2>City Day 5 (date)</h2>
-                <p class="titleDetails">Temperature: __C°</p>
-                <p class="titleDetails">Wind: __M/S</p>
-                <p class="titleDetails">Humidity: __%</p>
+                <h2>Date</h2>
+                <p class="titleDetails">Temperature/p></p>
+                <p class="titleDetails">Wind/p></p>
+                <p class="titleDetails">Humidity</p>
               </div>
             </div>
           </div>
