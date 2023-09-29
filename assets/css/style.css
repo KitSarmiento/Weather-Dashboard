@@ -12,7 +12,8 @@ h1 {
   text-align: center;
   padding: 20px 0;
   font-family: "Domine", serif;
-  font-size: 2rem;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .container {
@@ -21,22 +22,27 @@ h1 {
   padding: 20px;
 }
 
-.city {
-  font-size: 1.2rem;
+/*Search bar header*/
+.city,
+#history {
+  font-size: 30px;
   font-weight: bold;
   color: black;
 }
 
+/*Search bar placeholder*/
 .cityName {
-  height: 3vh;
+  height: 4vh;
   width: 25vw;
   font-size: 1rem;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
+/*Search bar button*/
 .searchBtn {
   background-color: rgba(10, 12, 29, 0.89);
   border: none;
@@ -53,6 +59,24 @@ h1 {
   background-color: #0a0c1d;
 }
 
+/*Search History*/
+.searchHistory {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 53vh;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.searchHistory li {
+  font-size: 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/*Weather Data container*/
 .weatherData {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -60,6 +84,7 @@ h1 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+/*Current Forecast*/
 .currentData {
   border: 2px solid black;
   padding: 20px;
@@ -72,25 +97,24 @@ h1 {
   border-radius: 10px;
 }
 
-.currentData h2 {
-  font-size: 1.5rem;
+.currentData h2,
+.daysForecast h2 {
+  font-size: 25px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .titleDetails {
-  font-size: 1rem;
+  font-size: 20px;
   margin: 5px 0;
 }
 
+/*5-days Weather Forecast*/
 .daysForecast {
   margin-top: 20px;
 }
 
-.daysForecast h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
+/*Style for the cards (5 days forecast)*/
 .cardsForecast {
   display: flex;
   justify-content: space-between;
@@ -106,25 +130,9 @@ h1 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.cardsDetails h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.searchHistory {
-  list-style: none;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  max-height: 200px;
-  overflow-y: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.searchHistory li {
-  font-size: 1rem;
+.cardsDetails p {
+  font-size: 20px;
   margin: 5px 0;
-  cursor: pointer;
 }
 
 .currentData img,
@@ -133,6 +141,7 @@ h1 {
   height: 115px;
 }
 
+/*Media Query to ensure that the application is responsive*/
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
